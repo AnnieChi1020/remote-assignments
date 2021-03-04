@@ -11,7 +11,7 @@ function myFunction() {
   }
 }
 
-banner.addEventListener('click', () => {
+headline.addEventListener('click', () => {
   headline.textContent = 'Have a Good Time!';
 } );
 
