@@ -44,20 +44,20 @@ console.log(calculate({n1 : 9, n2 : 7, op : '-'}));
 // console.log(calculate(toObject(keys, values)));
 
 // Method 4
-function calData (n1,n2, op) {
+function calData1 (n1,n2, op) {
     this.n1 = n1;
     this.n2 = n2;
     this.op = op;
 } 
 
-console.log (calculate (new calData ( 6 , 1 , '-' ) ) ) ;
+console.log (calculate (new calData1 ( 6 , 1 , '-' ) ) ) ;
 
 // Method 5
-class calData {
+class calData2 {
     constructor (n1,n2, op) {
         this.n1 = n1;
         this.n2 = n2;
         this.op = op;
     }
 }
-console.log (calculate (new calData ( 13 , 2 , '+' ) ) ) ;
+console.log (calculate (new calData2 ( 13 , 2 , '+' ) ) ) ;
