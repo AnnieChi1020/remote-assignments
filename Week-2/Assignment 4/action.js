@@ -26,7 +26,7 @@ banner.addEventListener('click', () => {
 } );
 
 action.addEventListener('click', ()=> {
-  if(hidden.style.display == ' ' || hidden.style.display == 'none'){
+  if(hidden.style.display == '' || hidden.style.display == 'none'){
     hidden.style.display = 'flex';
   } else {
     hidden.style.display = 'none';
