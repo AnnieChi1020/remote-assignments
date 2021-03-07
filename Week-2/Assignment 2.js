@@ -43,7 +43,7 @@ console.log(calculate({n1 : 9, n2 : 7, op : '-'}));
 
 // console.log(calculate(toObject(keys, values)));
 
-//Method 4
+// Method 4
 function calData (n1,n2, op) {
     this.n1 = n1;
     this.n2 = n2;
@@ -52,3 +52,12 @@ function calData (n1,n2, op) {
 
 console.log (calculate (new calData ( 6 , 1 , '-' ) ) ) ;
 
+// Method 5
+class calData {
+    constructor (n1,n2, op) {
+        this.n1 = n1;
+        this.n2 = n2;
+        this.op = op;
+    }
+}
+console.log (calculate (new calData ( 13 , 2 , '+' ) ) ) ;
