@@ -1,0 +1,63 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 500px) {
+
+	.main-header,
+	.left-header,
+	.main-nav,
+	.row,
+	.hidden {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.row,
+	.hidden {
+		flex-wrap: wrap;
+	}
+
+	.col {
+		flex: 1 50%;
+		justify-content: space-between;
+	}
+	
+}
+
+
+@media (max-width: 500px) {
+
+	.main-header,
+	.left-header,
+	.main-nav,
+	.row,
+	.hidden {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+
+	.col {
+		flex: 1;
+	}
+
+	.row,
+	.hidden {
+		flex-direction: column;
+	}
+
+
+}
+
